@@ -15,8 +15,8 @@ body {
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
-   /*background-position: center;*/
     height: 100vh;
+    padding-top: 80px;
     
 }
 
@@ -36,9 +36,7 @@ header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 1px;
+    flex-wrap: wrap; /* Allow wrapping */
 }
 
 header h1 {
@@ -49,6 +47,8 @@ header h1 {
 header ul {
     list-style: none;
     display: flex;
+    padding: 0; /* Prevent extra padding/margin */
+    margin: 0;
 }
 
 header ul li {
@@ -91,6 +91,12 @@ img{
 
 }
 
+#profile-picture img {
+    max-width: 100%; /* Prevent image stretching */
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional aesthetic */
+}
 
 .btn {
     background:  #18bc9c;
@@ -233,9 +239,13 @@ list-style: none;
 
 .skills {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 5rem;
-    margin-top: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Slightly wider boxes */
+    gap: 2rem; /* Adjust gap for clarity */
+}
+
+.skills li img {
+    display: block; /* Ensures images don't break out */
+    margin: 0 auto 10px; /* Centers icons within boxes */
 }
 
 .skills li {
