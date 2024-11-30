@@ -1,0 +1,397 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-image: url(pexels-leeloothefirst-7873568.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+   /*background-position: center;*/
+    height: 100vh;
+    
+}
+
+
+header {
+    background: linear-gradient(90deg, #1e90ff, #4b6cb7);
+    color: #fff;
+    padding: 1rem 0;
+    position:fixed;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1px;
+}
+
+header h1 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+}
+
+header ul li {
+    margin: 0 14px;
+}
+
+header ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: color 0.5s ease-in-out;
+}
+
+header ul li a:hover {
+    color: #f4b400;
+}
+
+section {
+    padding: 3rem 0;
+    background-color: white;
+    margin: 2rem 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+ .highlight {
+    color: #f1c40f;
+}
+
+img{
+    border-radius: 50%;
+    
+}
+
+#profile-picture{
+  
+    background: linear-gradient(135deg, #e0c3fc, #8ec5fc);
+    opacity: 95%;
+
+}
+
+
+.btn {
+    background:  #18bc9c;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s ease-in-out;
+    align-items: center;
+    
+}
+
+.btn:hover{
+    background-color: white;
+    transition: color 0.6 ease;
+    color: #18bc9c;
+}
+
+
+#skills {
+    background: linear-gradient(90deg, #5ee7df, #b490ca); 
+    opacity: 90%;
+}
+
+
+#projects {
+    background: linear-gradient(90deg, #a18cd1, #0ab861); 
+    opacity: 90%;
+}
+
+
+#achievements {
+    background: linear-gradient(90deg, #11998e, #435cec); 
+    opacity: 90%;
+}
+
+
+#academia {
+    background: linear-gradient(90deg, #f7971e, #ffd200); 
+    color: #333;
+    opacity: 90%;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+h2 {
+    font-size: 2rem;
+    color: black;
+    margin-bottom: 2rem;
+    text-align: center;
+    position: relative;
+}
+
+h2::after {
+    content: '';
+    display: block;
+    width: 90px;
+    height: 4px;
+    background: #1e90ff;
+    margin: 10px auto;
+    border-radius: 10px;
+}
+
+p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #555;
+    text-align: justify;
+    margin: 1rem 0;
+}
+
+#experience {
+    background: linear-gradient(90deg, #c33764, #1d2671); 
+    opacity: 90%;
+}
+
+
+.card {
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.carding:hover{
+    color: #18bc9c;
+}
+
+.card h3 {
+    color: #1e90ff;
+    margin-bottom: 0.5rem;
+}
+
+.card ul {
+    list-style-type: square;
+    padding-left: 1rem;
+}
+
+.card ul li {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    color: #333;
+}
+
+#academia{
+    display: grid;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+.academia li{
+background: #f9f9f9;
+border: 1px solid #ddd;
+padding: 1rem;
+border-radius: 5px;
+text-align: center;
+font-size: 1rem;
+font-weight: bold;
+color: #555;
+transition: background 0.5s ease-in;
+list-style: none;
+}
+
+.academia li:hover {
+    background: #1e90ff;
+    color: #fff;
+}
+
+.skills {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 5rem;
+    margin-top: 1.5rem;
+}
+
+.skills li {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 1rem;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 1rem;
+    color: #555;
+    transition: background 0.5s ease-in;
+    font-family: 'Times New Roman', Times, serif;
+    list-style: none;
+}
+
+.skills li:hover {
+    background: #1e90ff;
+    color: #fff;
+}
+
+.awards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.awards li {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 1rem;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 1rem;
+    color: #555;
+    transition: background 0.5s ease-in;
+    font-family: 'Times New Roman', Times, serif;
+    list-style: none;
+}
+
+.awards li:hover {
+    background: #1e90ff;
+    color: #fff;
+}
+
+#contactme{
+    background: #2c3e50;
+    padding: 50px 20px;
+    opacity: 90%;
+}
+
+
+
+footer {
+    background: linear-gradient(90deg, #232526, #414345); 
+    color: #ffffff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+    font-size: 1rem;
+}
+
+footer p {
+    margin: 0.5rem 0;
+    text-align: center;
+    color: white;
+}
+
+footer p a {
+    color: #f4b400;
+    text-decoration: none;
+}
+
+footer p a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design for Mobile Screens (Max-width: 480px) */
+@media (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    header ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header ul li {
+        margin: 10px 0;
+    }
+
+    .container {
+        padding: 0 10px;
+    }
+
+    section {
+        padding: 2rem 1rem;
+        margin: 1rem 0;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .skills, .awards, #academia ul {
+        grid-template-columns: 1fr;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .btn {
+        padding: 8px 15px;
+        font-size: 0.9rem;
+    }
+
+    footer p {
+        font-size: 0.9rem;
+    }
+}
+
+/* Tablet Screens (Max-width: 768px) */
+@media (max-width: 768px) {
+    .container {
+        padding: 0 15px;
+    }
+
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    .skills, .awards, #academia ul {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Desktop Screens (Min-width: 769px) */
+@media (min-width: 769px) {
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    h2 {
+        font-size: 2.2rem;
+    }
+}
+
