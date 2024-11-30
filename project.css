@@ -242,10 +242,6 @@ list-style: none;
     gap: 2rem; /* Adjust gap for clarity */
 }
 
-.skills li img {
-    display: block; /* Ensures images don't break out */
-    margin: 0 auto 10px; /* Centers icons within boxes */
-}
 
 .skills li {
     background: #f9f9f9;
@@ -370,6 +366,10 @@ footer p a:hover {
 
     footer p {
         font-size: 0.9rem;
+    }
+    .skills li img {
+    display: block; /* Ensures images don't break out */
+    margin: 0 auto 10px; /* Centers icons within boxes */
     }
 }
 
